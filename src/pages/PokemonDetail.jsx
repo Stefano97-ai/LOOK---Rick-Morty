@@ -38,7 +38,6 @@ const PokemonDetail = () => {
                 />
             ))}
 
-            {/* Card */}
             <div className="relative z-10 flex flex-col items-center gap-5 p-10 rounded-2xl"
                 style={{
                     background: "linear-gradient(135deg, #0a0a2e, #001a0a)",
@@ -46,7 +45,6 @@ const PokemonDetail = () => {
                     boxShadow: "0 0 60px #22c55e20, 0 0 120px #0a0a2e"
                 }}
             >
-                {/* Botón volver */}
                 <div className="w-full flex justify-start">
                     <Link to="/pokedex"
                         className="font-black text-black px-6 py-2 rounded-full transition duration-300 hover:scale-110"
@@ -58,8 +56,6 @@ const PokemonDetail = () => {
                         ← Volver
                     </Link>
                 </div>
-
-                {/* Imagen con portal */}
                 <div className="relative flex justify-center items-center">
                     <div className="absolute w-52 h-52 rounded-full animate-pulse opacity-20"
                         style={{ background: "radial-gradient(circle, #22c55e, transparent)" }}
@@ -75,14 +71,12 @@ const PokemonDetail = () => {
                     />
                 </div>
 
-                {/* ID */}
                 <span className="font-bold text-sm"
                     style={{ color: "#4ade8080" }}
                 >
                     #{pokemonUnique?.id}
                 </span>
 
-                {/* Nombre */}
                 <h1 className="text-4xl font-black text-center"
                     style={{
                         background: "linear-gradient(135deg, #ffffff, #4ade80)",
@@ -94,7 +88,6 @@ const PokemonDetail = () => {
                     {pokemonUnique?.name}
                 </h1>
 
-                {/* Badges */}
                 <div className="flex gap-3 flex-wrap justify-center">
                     <span className="px-4 py-2 rounded-full font-black text-white text-sm"
                         style={{ background: "#3b82f6", boxShadow: "0 0 10px #3b82f6" }}
@@ -115,8 +108,6 @@ const PokemonDetail = () => {
                         {pokemonUnique?.gender}
                     </span>
                 </div>
-
-                {/* Info */}
                 <div className="flex flex-col gap-2 text-center">
                     <p className="font-bold" style={{ color: "#86efac" }}>
                         🌍 Origen: <span className="text-white">{pokemonUnique?.origin?.name}</span>
